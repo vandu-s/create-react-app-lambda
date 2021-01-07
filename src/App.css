@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap');
+
+
+.App {
+  overflow: hidden;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff;
+  padding: 0;
+  background-color: #24282F;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  padding:1%;
+  box-shadow: 1px 2px 5px #131A28;
+  background-color: #0c101a;
+
+}
+nav a{
+  text-decoration:none;
+  color: white;
+}
+
+.logo{
+  margin: 0 30px;
+  font-size: 30px;
+
+}
+.menu{
+  display: flex;
+  align-items: center;
+  width: 600px;
+  justify-content: space-around;
+
+}
+.heading{
+  color: white;
+  margin: 20px 0 0 120px;
+
+}
+.container{
+  margin-left: 8%;
+}
+
+.Wrapper{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.card{
+  width: calc(17% - 24px);
+  background-color: black;
+  margin: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(2, 9, 12, 0.3);
+  position: relative;
+ cursor: pointer;
+}
+.thumbnail{
+  width:100%;
+  display: block;
+
+}
+.overlay{
+  padding: 5px 8px;
+  position: absolute;
+  top: 30%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rbga(255,119,29,0);
+ }
+ .card:hover .overlay{
+   opacity: 1;
+ }
+ .card:hover {
+ background-color: black;}
+
+.content{
+  color:white;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  
+}
